@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NERV - Contact</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="contact-main">
+      <div class="container navbar">
+        <div class="logo"><img src="./img/logo.svg" alt="Logo" /></div>
+        <button class="burgermenu" id="toggleButton">
+          <img src="./img/burger.svg" alt="burger" />
+        </button>
+        <nav
+          id="element"
+          style="
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s;
+          "
+        >
+          <ul class="navul">
+            <li class="nav-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item"><a href="#products">Products</a></li>
+            <li class="nav-item"><a href="#wikis">Wikis</a></li>
+            <li class="nav-item"><a href="#">Sales</a></li>
+            <li class="nav-item"><a href="aboutus.html">About Us</a></li>
+            <li class="nav-item active"><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="search-bar">
+            <div>
+              <button class="search-icon">
+                <img src="./img/searchicon.svg" alt="Searchicon" />
+              </button>
+              <button class="cart">
+                <img src="./img/caricon.svg" alt="caricon" />
+              </button>
+            </div>
+            <button class="sign-in">SIGN IN</button>
+          </div>
+        </nav>
+      </div>
+      <div class="container form-box">
+        <div>
+          <h2>GET IN TOUCH</h2>
+          <p>If you have some questions you can contact us</p>
+          <div class="form-inputs">
+            <form action="#" method="post">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <textarea
+                id="message"
+                name="message"
+                rows="12"
+                placeholder="Text here..."
+                required
+              ></textarea>
+              <button type="submit" class="learn-btn learn-abus-btn">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="hline"></div>
+      <div class="container">
+        <div class="footer-box">
+          <!-- footer social icons -->
+          <div class="footer-social">
+            <div><img src="./img/footer-logo.png" alt="logo" /></div>
+            <div>
+              <p>
+                We are the inventors of innovative tools, We strive to always be
+                one step ahead in the future to take care of your comfort and
+                make your life as comfortable as possible.
+              </p>
+            </div>
+            <div class="social-icons">
+              <a href="#"><img src="./img/fb.svg" alt="" /></a>
+              <a href="#"><img src="./img/instagram.svg" alt="" /></a>
+              <a href="#"><img src="./img/twiter.svg" alt="" /></a>
+            </div>
+          </div>
+          <!-- footer menu box -->
+          <div class="footer-menu-box">
+            <div>
+              <h4>Navigate</h4>
+              <ul>
+                <li class="footer-menu-item"><a href="index.html">Home</a></li>
+                <li class="footer-menu-item"><a href="">Features</a></li>
+                <li class="footer-menu-item"><a href="">Company</a></li>
+                <li class="footer-menu-item"><a href="">Support</a></li>
+                <li class="footer-menu-item"><a href="">Pricing</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Support Us</h4>
+              <ul>
+                <li class="footer-menu-item"><a href="">FAQ</a></li>
+                <li class="footer-menu-item"><a href="">Contact us</a></li>
+                <li class="footer-menu-item"><a href="">Support Center</a></li>
+                <li class="footer-menu-item"><a href="">Security</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Partner</h4>
+              <ul>
+                <li class="footer-menu-item"><a href="">Our Partner</a></li>
+                <li class="footer-menu-item"><a href="">Subscribe</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hline"></div>
+      <!-- footer bottom -->
+      <div class="container footer-bottom">
+        <div>
+          <h3>Xborg 2022 All Rights Reserved</h3>
+        </div>
+        <div>
+          <a href="">Terms & Conditions</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Sitemap</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document
+        .getElementById("toggleButton")
+        .addEventListener("click", function () {
+          var element = document.getElementById("element");
+          element.style.visibility =
+            element.style.visibility === "hidden" ? "visible" : "hidden";
+          element.style.opacity = element.style.opacity === "0" ? "1" : "0";
+        });
+    </script>
+  </body>
+</html>
